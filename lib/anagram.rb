@@ -8,7 +8,8 @@ class Anagram
   end
 
   def match(word)
-    @word.select 
+    @word.select do |words|
+      word.split("") == @word.split
 
   end
 
